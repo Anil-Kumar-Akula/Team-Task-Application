@@ -1,0 +1,15 @@
+{
+  "name": "Employee",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "email": { "type": "string" },
+    "phone": { "type": "string", "description": "With country code e.g. +91XXXXXXXXXX" },
+    "department": {
+      "type": "string",
+      "enum": ["Engineering","Design","Marketing","Sales","HR","Finance","Operations","Support"]
+    },
+    "is_active": { "type": "boolean", "default": true }
+  },
+  "required": ["name", "email"]
+}
